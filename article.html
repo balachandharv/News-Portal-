@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Detail | NewsKrish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">NewsKrish</a>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search news...">
+            </div>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Bookmarks</a>
+                <a href="profile.html">Feedback</a>
+                <a href="auth.html" class="btn-primary">Login / Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="article-header">
+            <img src="https://images.unsplash.com/photo-1585829365234-78ef2757c818?auto=format&fit=crop&q=80&w=1200" alt="Hero" class="hero-img">
+            <div class="hero-overlay"></div>
+            <div class="container" style="position: relative; height: 100%; display: flex; align-items: flex-end; padding-bottom: 3rem;">
+                <div class="hero-content" style="max-width: 800px;">
+                    <span class="badge">Technology</span>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Major Tech Breakthrough in AI Energy Efficiency</h1>
+                    <div class="card-meta" style="color: white; margin-top: 1.5rem;">
+                        <span><i class="far fa-calendar"></i> March 25, 2026</span>
+                        <span><i class="far fa-user"></i> By Sarah Johnson</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-top: 3rem;">
+            <article class="article-content" style="color: var(--text-primary);">
+                <p style="font-size: 1.25rem; font-weight: 500; margin-bottom: 2rem; color: var(--text-secondary);">In a monumental shift for the artificial intelligence landscape, a team of researchers has announced a new neural network architecture that could redefine how we power our future digital worlds.</p>
+                
+                <p style="margin-bottom: 1.5rem;">The breakthrough, dubbed "GreenNeuro," utilizes a novel sparse-activation technique that mimics the human brain's efficiency. Unlike traditional models that activate every neuron for every task, GreenNeuro only powers up the specific pathways required for the current computation.</p>
+
+                <h2 style="margin: 2rem 0 1rem; font-size: 2rem;">Why It Matters</h2>
+                <p style="margin-bottom: 1.5rem;">As AI integration becomes ubiquitous, the environmental cost of maintaining massive data centers has become a primary concern. Current estimations suggest that by 2030, AI-related energy consumption could rival that of medium-sized nations. This new architecture offers a path toward sustainable scaling.</p>
+
+                <blockquote style="border-left: 4px solid var(--primary-color); padding-left: 2rem; margin: 3rem 0; font-style: italic; font-size: 1.5rem; color: var(--text-secondary);">
+                    "We didn't just want to build a faster AI; we wanted to build a smarter one that respects the constraints of our planet's resources," says Dr. Elena Vance, lead researcher at the Global Tech Institute.
+                </blockquote>
+
+                <p style="margin-bottom: 1.5rem;">The team's findings have been peer-reviewed and published in the latest issue of Science & Tech Weekly, receiving widespread acclaim from industry leaders and environmental advocates alike.</p>
+
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color); display: flex; gap: 2rem;">
+                    <span>Share:</span>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="glass" style="padding: 2rem; margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1.5rem;">Related News</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <a href="#" style="display: flex; gap: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&h=100&fit=crop" style="border-radius: 8px; width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h4 style="font-size: 0.95rem; margin-bottom: 0.3rem;">New quantum processor unveiled...</h4>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">2 hours ago</span>
+                            </div>
+                        </a>
+                        <a href="#" style="display: flex; gap: 1rem;">
+                            <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=100&h=100&fit=crop" style="border-radius: 8px; width: 60px; height: 60px; object-fit: cover;">
+                            <div>
+                                <h4 style="font-size: 0.95rem; margin-bottom: 0.3rem;">Cybersecurity trends for 2026...</h4>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">5 hours ago</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass" style="padding: 2rem; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); color: white;">
+                    <h3 style="margin-bottom: 1rem;">Newsletter</h3>
+                    <p style="font-size: 0.9rem; margin-bottom: 1.5rem;">Get the latest tech updates delivered to your inbox.</p>
+                    <input type="text" placeholder="Your Email" style="width: 100%; padding: 0.8rem; border-radius: 12px; border: none; margin-bottom: 1rem;">
+                    <button class="btn-primary" style="background: white; color: var(--primary-color); width: 100%;">Subscribe</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="background: var(--card-bg); padding: 4rem 0; margin-top: 5rem; border-top: 1px solid var(--border-color);">
+        <!-- Footer content (same as index.html) -->
+        <div class="container" style="text-align: center; color: var(--text-secondary);">
+            <p>&copy; 2026 NewsKrish Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | NewsKrish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-layout">
+        <aside class="admin-sidebar glass" style="border-radius: 0;">
+            <div class="logo" style="margin-bottom: 3rem;">NewsKrish Admin</div>
+            <nav style="display: flex; flex-direction: column; gap: 1rem;">
+                <a href="#" class="category-btn active" style="text-align: left; border-radius: 12px; width: 100%;"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="#" class="category-btn" style="text-align: left; border-radius: 12px; width: 100%;"><i class="fas fa-newspaper"></i> News Management</a>
+                <a href="#" class="category-btn" style="text-align: left; border-radius: 12px; width: 100%;"><i class="fas fa-users"></i> User Management</a>
+                <a href="#" class="category-btn" style="text-align: left; border-radius: 12px; width: 100%;"><i class="fas fa-comments"></i> Comments</a>
+                <a href="#" class="category-btn" style="text-align: left; border-radius: 12px; width: 100%;"><i class="fas fa-envelope"></i> Feedback</a>
+                <a href="index.html" class="category-btn" style="text-align: left; border-radius: 12px; width: 100%; margin-top: auto;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+                <h1>Dashboard Overview</h1>
+                <button class="btn-primary"><i class="fas fa-plus"></i> Create News</button>
+            </header>
+
+            <!-- Stats Grid -->
+            <section class="stats-grid">
+                <div class="stat-card glass">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Total Articles</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">1,280</h2>
+                    <span style="color: #10b981; font-size: 0.85rem;"><i class="fas fa-arrow-up"></i> 12% increase</span>
+                </div>
+                <div class="stat-card glass">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Total Users</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">8,420</h2>
+                    <span style="color: #10b981; font-size: 0.85rem;"><i class="fas fa-arrow-up"></i> 5% increase</span>
+                </div>
+                <div class="stat-card glass">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Total Views</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">1.2M</h2>
+                    <span style="color: #ef4444; font-size: 0.85rem;"><i class="fas fa-arrow-down"></i> 2% decrease</span>
+                </div>
+                <div class="stat-card glass">
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Pending Feedbacks</span>
+                    <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">24</h2>
+                    <span style="color: var(--secondary-color); font-size: 0.85rem;">Requires Action</span>
+                </div>
+            </section>
+
+            <!-- News Management Table -->
+            <section class="glass" style="padding: 2rem;">
+                <h3 style="margin-bottom: 2rem;">Recent News Articles</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Major Tech Breakthrough in AI...</td>
+                            <td>Technology</td>
+                            <td>Sarah Johnson</td>
+                            <td>25 Mar 2026</td>
+                            <td>
+                                <button style="color: var(--secondary-color); margin-right: 1rem;"><i class="fas fa-edit"></i></button>
+                                <button style="color: #ef4444;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Placement Season Starts: Top Companies...</td>
+                            <td>Education</td>
+                            <td>Admin</td>
+                            <td>24 Mar 2026</td>
+                            <td>
+                                <button style="color: var(--secondary-color); margin-right: 1rem;"><i class="fas fa-edit"></i></button>
+                                <button style="color: #ef4444;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Inter-College Sports Meet Results...</td>
+                            <td>Sports</td>
+                            <td>Sports Desk</td>
+                            <td>23 Mar 2026</td>
+                            <td>
+                                <button style="color: var(--secondary-color); margin-right: 1rem;"><i class="fas fa-edit"></i></button>
+                                <button style="color: #ef4444;"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
